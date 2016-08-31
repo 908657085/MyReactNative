@@ -15,7 +15,6 @@ import ModalExample from './examples/Modal'
 import ReduxExample from './examples/Redux'
 import TouchExample from './examples/Touch'
 import ScrollTab from './examples/Touch/containers/ScrollTabPage';
-import  NavigationExperimentalExample from './examples/NavigationExperimental/NavigationExperimentalExample';
-import NavigatorExamples from './Navigator/NavigatorExample';
+import NavigatorExamples from './examples/Navigator/NavigatorExample';
 
 AppRegistry.registerComponent('MyProject', () => NavigationExperimentalExample);

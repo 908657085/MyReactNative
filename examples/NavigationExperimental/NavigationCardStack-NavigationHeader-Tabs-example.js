@@ -359,7 +359,9 @@ const YourScene = createAppNavigationContainer(class extends Component {
 
   render(): ReactElement {
     return (
-      <ScrollView>
+      <ScrollView
+        style={{marginTop:64}}
+        >
         <NavigationExampleRow
           text="Push Route"
           onPress={this._pushRoute}

@@ -17,4 +17,4 @@ import TouchExample from './examples/Touch'
 import ScrollTab from './examples/Touch/containers/ScrollTabPage';
 import NavigationExperimentalExample from './examples/NavigationExperimental/NavigationExperimentalExample';
 
-AppRegistry.registerComponent('MyProject', () => NavigationExperimentalExample);
+AppRegistry.registerComponent('MyProject', () => ListViewExample);

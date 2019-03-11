@@ -12,6 +12,7 @@ import {
 }from 'react-native';
 import * as Constants from '../../constants/Constants';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { PropTypes} from 'prop-types';
 
 export default class BottomTab extends Component {
 
@@ -22,12 +23,12 @@ export default class BottomTab extends Component {
     }
 
     static propTypes = {
-        tabIndex: React.PropTypes.number,
-        title: React.PropTypes.string,
-        iconName: React.PropTypes.string,
-        iconSize: React.PropTypes.number,
-        onTabClick: React.PropTypes.func,
-        defaultSelect: React.PropTypes.bool,
+        tabIndex: PropTypes.number,
+        title: PropTypes.string,
+        iconName: PropTypes.string,
+        iconSize: PropTypes.number,
+        onTabClick: PropTypes.func,
+        defaultSelect: PropTypes.bool,
     }
 
     constructor(props) {

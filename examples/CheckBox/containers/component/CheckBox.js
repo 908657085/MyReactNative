@@ -7,6 +7,7 @@ import{
     TouchableHighlight,
     StyleSheet
 }from 'react-native';
+import { PropTypes} from 'prop-types';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export  default  class CheckBox extends Component {
@@ -18,11 +19,11 @@ export  default  class CheckBox extends Component {
     }
 
     static propTypes = {
-        iconName: React.PropTypes.string,
-        iconNameChecked: React.PropTypes.string,
-        checked: React.PropTypes.bool,
-        value: React.PropTypes.any,
-        onChange: React.PropTypes.func
+        iconName: PropTypes.string,
+        iconNameChecked: PropTypes.string,
+        checked: PropTypes.bool,
+        value: PropTypes.any,
+        onChange: PropTypes.func
     }
 
     constructor(props) {

@@ -20,7 +20,7 @@ class MainPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            text: 'http://172.18.19.69:8080/test/index.json',
+            text: 'http://101.132.38.194:9090/jsonData',
         };
     }
 

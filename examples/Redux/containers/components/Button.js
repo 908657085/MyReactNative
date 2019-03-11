@@ -7,6 +7,7 @@ import {
     TouchableHighlight,
     StyleSheet,
 }from 'react-native';
+import { PropTypes} from 'prop-types';
 
 export default class Button extends Component {
 
@@ -15,7 +16,7 @@ export default class Button extends Component {
     }
 
     static propTypes = {
-        text: React.PropTypes.string,
+        text: PropTypes.string,
     }
 
     constructor(props) {

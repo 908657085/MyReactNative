@@ -12,6 +12,7 @@ import {
 import * as Constants from '../../constants/Constants';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import BottomTab from './BottomTab';
+import { PropTypes} from 'prop-types';
 
 const TAG_TAB = "tab_";
 const TAG_TAB_VIEW = "tabView_";
@@ -26,7 +27,7 @@ export default class BottomTabView extends Component {
     }
 
     static propTypes = {
-        defaultSelectTab: React.PropTypes.number,
+        defaultSelectTab: PropTypes.number,
     }
 
     constructor(props) {

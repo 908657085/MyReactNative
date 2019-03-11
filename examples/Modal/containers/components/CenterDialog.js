@@ -8,6 +8,7 @@ import{
     StyleSheet,
     TouchableHighlight,
 }from 'react-native';
+import { PropTypes} from 'prop-types';
 
 export default class CenterDialog extends Component {
     static defaultProps = {
@@ -17,11 +18,11 @@ export default class CenterDialog extends Component {
     }
 
     static propTypes = {
-        title: React.PropTypes.string,
-        info: React.PropTypes.string,
-        type: React.PropTypes.oneOf(["msg", "confirm"]),
-        onCancel: React.PropTypes.func,
-        onConfirm: React.PropTypes.func,
+        title: PropTypes.string,
+        info: PropTypes.string,
+        type: PropTypes.oneOf(["msg", "confirm"]),
+        onCancel: PropTypes.func,
+        onConfirm: PropTypes.func,
     }
 
     constructor(props) {

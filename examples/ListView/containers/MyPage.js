@@ -10,13 +10,9 @@ import{
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CheckBox from '../../CheckBox/containers/component/CheckBox';
 import listData from '../mock/mock';
+import { PropTypes} from 'prop-types';
 
-const Button = React.createClass({
-    propTypes: {
-        text: React.PropTypes.string,
-        onPress: React.PropTypes.func
-    },
-
+class Button extends React.Component{
     render(){
         return (
             <View style={{
@@ -34,7 +30,12 @@ const Button = React.createClass({
             </View>
         );
     }
-});
+};
+
+Button.PropTypes= {
+    text: PropTypes.string,
+    onPress:PropTypes.func
+};
 var checkBoxData = [];
 export default class MyPage extends Component {
 
